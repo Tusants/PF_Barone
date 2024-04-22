@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/icon.jpeg">
+    <title>BurrosoBienesRaices</title>
+    <link rel="stylesheet" href="../Style/Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ropa+Sans:ital@0;1&display=swap";
+    rel="stylesheet">
+
+</head>
+<body>
+    <header class="navbar">
+        <img src="../img/imagenG.jpeg" alt="Logo">
+        <div>
+            <h1></h1> <!--No se que poner pero Casi seguro le ponga el Nombre de la empresa-->
+            <p>||Teléfono: 123456789 ||Celular: 987654321 ||Redes: FacebookTwitter@Instagram.com ||</p>
+        </div>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+                <label for="nav-toggle" class="nav-toggle-label"></label>
+
+            <nav class="navHamburguesa">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../pages/tasaciones.html">Tasacion Online</a></li>
+                    <li><a href="../pages/contacto.html">Contacto</a></li>
+                    <li><a href="../pages/sobreNosotros.html">SobreNosotros</a></li>
+                </ul>
+            </nav>  
+    </header>
+    <main class="pagTasacion">
+        <div class="formTasacion">
+            <h2>Tasacion Online</h2>
+            <form action="procesar_formulario.php" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+    
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required><br><br>
+    
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required><br><br>
+    
+                <label for="superficie_cubierta">Superficie Cubierta:</label>
+                <div class="input-group">
+                    <input type="number" id="superficie_cubierta" name="superficie_cubierta" required>
+                    <span class="unit">Mts2</span>
+                </div>
+                <br><br>
+    
+                <label for="superficie_descubierta">Superficie Descubierta:</label>
+                <div class="input-group">
+                    <input type="number" id="superficie_descubierta" name="superficie_descubierta" required>
+                    <span class="unit">Mts2</span>
+                </div>
+                <br><br>
+
+                <label for="tipo_techo">Tipo de Techo:</label>
+                <select id="tipo_techo" name="tipo_techo" required>
+                    <option value="chapa">Losa</option>
+                    <option value="tejas">Parabólico</option>
+                    <option value="losa">Acanalado</option>
+                    <option value="otro">Otro</option>
+                </select><br><br>
+
+                <label for="descripcion">Descripcion Breve De la propiedad</label><br>
+                <textarea id="descripcion" name="Descripcion" rows="4" cols="50"></textarea><br><br><label for="comentario">Comentario u Observación:</label><br>
+                    
+
+                <label for="objetivo_de_Cotizacion">Objetivo de Cotizacion</label>
+                <select id="objetivo_De_Cotizacion" name="cotizacion" required>
+                    <option value="alquiler">Alquiler</option>
+                    <option value="venta">Venta</option>
+                    <option value="otros">Otros</option>
+                </select><br><br>
+                    <br><br>
+    
+                    <label for="comentario">Comentario u Observación:</label><br>
+                    <textarea id="comentario" name="comentario" rows="4" cols="50"></textarea><br><br>
+        
+    
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpiar">
+    
+            </form>
+        </div>
+        <footer>
+            <footer class="main-footer">
+                <div class="footer-banner">
+                    <img src="../img/banner.jpeg" alt="Banner">
+                </div>
+                <div class="footer-text">
+                    <h3>¿Porque Elegirnos?</h3>
+                    <p>Contamos con un amplio conocimiento 
+                        de la industria que nos capacita para ayudar a 
+                        nuestros clientes a comprar, alquilar, tasar y 
+                        vender sus propiedades. Nuestro personal altamente 
+                        calificado esta preparado para asesorar personalizadamente a 
+                        nuestros clientes a encontrar la propiedad que mas se adecue 
+                        a sus necesidades.</p>
+                </div>
+            </footer>
+        
+        </body>
+        </html>
+        

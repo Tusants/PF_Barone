@@ -1,0 +1,11 @@
+{
+  "name": "mi_repositorio",
+  "version": "1.0.0",
+  "description": "Las pages con diseño responsive son emprendimientos(grid), el index(flex) y el formulario contacto\r en emprendimientos utilice el framework boostrap, utilizando su carrousel",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

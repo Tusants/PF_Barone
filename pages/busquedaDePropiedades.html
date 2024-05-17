@@ -3,8 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="../img/icon.jpeg">
+        <link rel="icon" href="../img/imgLogos/icon.jpeg">
         <title>BurrosoBienesRaices</title>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="../style/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,69 +14,313 @@
     </head>
     <body>
         <header class="navbar">
-            <img src="../img/imagenG.jpeg" alt="Logo">
-            <div>
-                <h1></h1> <!--No se que poner pero Casi seguro le ponga el Nombre de la empresa-->
-                <p>||Teléfono: 123456789 ||Celular: 987654321 ||Redes: FacebookTwitter@Instagram.com ||</p>
+            <div class="navbar">
+                <div class="logo">
+                    <img src="../img/imgLogos/imagenG.jpeg" alt="Logo">
+                </div>
+                <div class="links">
+                    <a href="../index.html">Inicio</a>
+                    <a href="../pages/tasaciones.html">Tasaciones</a>
+                    <a href="../pages/contacto.html">Contacto</a>
+                    <a href="../pages/sobreNosotros.html">Nosotros</a>
+                    <a href="../pages/busquedaDePropiedades.html">Propiedades</a>
+                </div>
             </div>
-                <input type="checkbox" id="nav-toggle" class="nav-toggle">
-                    <label for="nav-toggle" class="nav-toggle-label"></label>
-
-                <nav class="navHamburguesa">
-                    <ul>
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="../pages/tasaciones.html">Tasacion Online</a></li>
-                        <li><a href="../pages/contacto.html">Contacto</a></li>
-                        <li><a href="../pages/sobreNosotros.html">SobreNosotros</a></li>
-                    </ul>
-                </nav>  
-        </header>
+            <div class="contact-info">
+                <a href="https://www.google.com/intl/es-419/gmail/about/">|| info@tudominio.com</a>
+                <a href="https://www.facebook.com" class="social-icon"><img src="../img/imgLogos/iconFace.png" alt="Instagram"></a>
+                <a href="https://www.instagram.com" class="social-icon"><img src="../img/imgLogos/iconInsta.jpeg" alt="Facebook"></a>
+                <a href="https://www.argenprop.com/?utm_campaign=AR_GS_Argentina_Generica_Brand-General_W_EX_1664708119&utm_medium=cpc&utm_source=Adwords&gad_source=1&gclid=Cj0KCQjw6PGxBhCVARIsAIumnWYpHpxHh9-NOHZ1ewwT8UU-3xLBbYzeMBesoepkzPgKAkfcLtjbrUsaArFlEALw_wcB"
+                class="social-icon"><img src="../img/imgLogos/iconArgen.jpeg" alt="ArgenProp"></a>
+            </div>
+        </header> 
         <main>
-            <div class="containerProp">
-                <h2>Promoción de Propiedades</h2>
-                <div class="gallery">
-                    <div class="propiedades">
-                        <img src="../img/imgProp/propiedad_1.jpeg" alt="propiedad 1">
-                        <p>Dirección: Calle 323, Ciudad</p>
+            <div class="container mt-5 container-properties">
+                <!-- Propiedad 1 -->
+                <div class="property-card" data-toggle="modal" data-target="#propertyModal1">
+                    <img src="../img/imgProp/propiedad_1.jpeg" alt="propiedad 1">
+                    <div class="details">
+                        <h5>Property 1</h5>
                     </div>
-                    <div class="propiedades">
-                        <img src="../img/imgProp/propiedad_2.jpeg" alt="Propiedad 2">
-                        <p>Dirección: Avenida 454, Ciudad</p>
+                </div>
+                <!-- Propiedad 2 -->
+                <div class="property-card" data-toggle="modal" data-target="#propertyModal2">
+                    <img src="../img/imgProp/propiedad_2.jpeg" alt="Propiedad 2">
+                    <div class="details">
+                        <h5>Property 2</h5>
                     </div>
-                    <div class="propiedades">
-                        <img src="../img/imgProp/propiedad_3.jpeg" alt="Propiedad 3">
-                        <p>Dirección: Plaza 787, Ciudad</p>
+                </div>
+                <!-- Propiedad 3 -->
+                <div class="property-card" data-toggle="modal" data-target="#propertyModal3">
+                    <img src="../img/imgProp/propiedad_3.jpeg" alt="Propiedad 3">
+                    <div class="details">
+                        <h5>Property 3</h5>
                     </div>
-                    <div class="propiedades">
-                        <img src="../img/imgProp/propiedad_4.jpeg" alt="Propiedad 4">
-                        <p>Dirección: Calle 545, Ciudad</p>
+                </div>
+                <!-- Propiedad 4 -->
+                <div class="property-card" data-toggle="modal" data-target="#propertyModal4">
+                    <img src="../img/imgProp/propiedad_4.jpeg" alt="Propiedad 4">
+                    <div class="details">
+                        <h5>Property 4</h5>
                     </div>
-                    <div class="propiedades">
-                        <img src="../img/imgProp/propiedad_5.jpeg" alt="Propiedad 5">
-                        <p>Dirección: Plaza 999, Ciudad</p>
+                </div>
+                <!-- Propiedad 5 -->
+                <div class="property-card" data-toggle="modal" data-target="#propertyModal5">
+                    <img src="../img/imgProp/propiedad_5.jpeg" alt="Propiedad 5">
+                    <div class="details">
+                        <h5>Property 5</h5>
                     </div>
-                    <div class="propiedades">
-                        <img src="../img/imgProp/propiedad_6.jpeg" alt="Propiedad 6">
-                        <p>Dirección: Plaza 323, Ciudad</p>
+                </div>
+                <!-- Propiedad 6 -->
+                <div class="property-card" data-toggle="modal" data-target="#propertyModal6">
+                    <img src="../img/imgProp/propiedad_6.jpeg" alt="Propiedad 6">
+                    <div class="details">
+                        <h5>Property 6</h5>
                     </div>
-                    <div class="propiedades">
-                        <img src="../img/imgProp/propiedad_7.jpeg" alt="Propiedad 7">
-                        <p>Dirección: Calle 787, Ciudad</p>
+                </div>
+                <!-- Propiedad 7 -->
+                <div class="property-card" data-toggle="modal" data-target="#propertyModal7">
+                    <img src="../img/imgProp/propiedad_7.jpeg" alt="Propiedad 7">
+                    <div class="details">
+                        <h5>Property 7</h5>
                     </div>
-                    <div class="propiedades">
-                        <img src="../img/imgProp/propiedad_8.jpeg" alt="Propiedad 8">
-                        <p>Dirección: Avenida 232, Ciudad</p>
+                </div>
+                <!-- Propiedad 8 -->
+                <div class="property-card" data-toggle="modal" data-target="#propertyModal8">
+                    <img src="../img/imgProp/propiedad_8.jpeg" alt="Propiedad 8">
+                    <div class="details">
+                        <h5>Property 8</h5>
                     </div>
-                    <div class="propiedades">
-                        <img src="../img/imgProp/propiedad_9.jpeg" alt="Propiedad 9">
-                        <p>Dirección: Calle 121, Ciudad</p>
+                </div>
+                <!-- Propiedad 9 -->
+                <div class="property-card" data-toggle="modal" data-target="#propertyModal9">
+                    <img src="../img/imgProp/propiedad_9.jpeg" alt="Propiedad 9">
+                    <div class="details">
+                        <h5>Property 9</h5>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Modals -->
+            <!-- Modal Propiedad 1 -->
+            <div class="modal fade" id="propertyModal1" tabindex="-1" role="dialog" aria-labelledby="propertyModalLabel1" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="propertyModalLabel1">Detalles de la Propiedad 1</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Descripción de la propiedad 1.</p>
+                            <p>Precio: $xxx,xxx</p>
+                            <p>Ubicación: Calle Falsa 123</p>
+                            <p>Superficie: xxx m²</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-primary">Más información</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Modal Propiedad 2 -->
+            <div class="modal fade" id="propertyModal2" tabindex="-1" role="dialog" aria-labelledby="propertyModalLabel2" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="propertyModalLabel2">Detalles de la Propiedad 2</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Descripción de la propiedad 2.</p>
+                            <p>Precio: $xxx,xxx</p>
+                            <p>Ubicación: Calle Verdadera 456</p>
+                            <p>Superficie: xxx m²</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-primary">Más información</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Modal Propiedad 3 -->
+            <div class="modal fade" id="propertyModal3" tabindex="-1" role="dialog" aria-labelledby="propertyModalLabel3" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="propertyModalLabel3">Detalles de la Propiedad 3</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Descripción de la propiedad 3.</p>
+                            <p>Precio: $xxx,xxx</p>
+                            <p>Ubicación: Calle Inventada 789</p>
+                            <p>Superficie: xxx m²</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-primary">Más información</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Modal Propiedad 4 -->
+            <div class="modal fade" id="propertyModal4" tabindex="-1" role="dialog" aria-labelledby="propertyModalLabel4" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="propertyModalLabel4">Detalles de la Propiedad 4</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Descripción de la propiedad 4.</p>
+                            <p>Precio: $xxx,xxx</p>
+                            <p>Ubicación: Calle Imaginaria 101</p>
+                            <p>Superficie: xxx m²</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-primary">Más información</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Modal Propiedad 5 -->
+            <div class="modal fade" id="propertyModal5" tabindex="-1" role="dialog" aria-labelledby="propertyModalLabel5" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="propertyModalLabel5">Detalles de la Propiedad 5</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Descripción de la propiedad 5.</p>
+                            <p>Precio: $xxx,xxx</p>
+                            <p>Ubicación: Calle Fabulosa 202</p>
+                            <p>Superficie: xxx m²</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-primary">Más información</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Modal Propiedad 6 -->
+            <div class="modal fade" id="propertyModal6" tabindex="-1" role="dialog" aria-labelledby="propertyModalLabel6" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="propertyModalLabel6">Detalles de la Propiedad 6</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Descripción de la propiedad 6.</p>
+                            <p>Precio: $xxx,xxx</p>
+                            <p>Ubicación: Calle Maravillosa 303</p>
+                            <p>Superficie: xxx m²</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-primary">Más información</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Modal Propiedad 7 -->
+            <div class="modal fade" id="propertyModal7" tabindex="-1" role="dialog" aria-labelledby="propertyModalLabel7" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="propertyModalLabel7">Detalles de la Propiedad 7</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Descripción de la propiedad 7.</p>
+                            <p>Precio: $xxx,xxx</p>
+                            <p>Ubicación: Calle Increíble 404</p>
+                            <p>Superficie: xxx m²</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-primary">Más información</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Modal Propiedad 8 -->
+            <div class="modal fade" id="propertyModal8" tabindex="-1" role="dialog" aria-labelledby="propertyModalLabel8" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="propertyModalLabel8">Detalles de la Propiedad 8</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Descripción de la propiedad 8.</p>
+                            <p>Precio: $xxx,xxx</p>
+                            <p>Ubicación: Calle Asombrosa 505</p>
+                            <p>Superficie: xxx m²</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-primary">Más información</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Modal Propiedad 9 -->
+            <div class="modal fade" id="propertyModal9" tabindex="-1" role="dialog" aria-labelledby="propertyModalLabel9" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="propertyModalLabel9">Detalles de la Propiedad 9</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Descripción de la propiedad 9.</p>
+                            <p>Precio: $xxx,xxx</p>
+                            <p>Ubicación: Calle Sorprendente 606</p>
+                            <p>Superficie: xxx m²</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-primary">Más información</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </main>
         <footer class="main-footer">
             <div class="footer-banner">
-                <img src="../img/banner.jpeg" alt="banner">
+                <img src="../img/imgLogos/banner.jpeg" alt="banner">
             </div>
             <div class="footer-text">
                 <h3>¿Porque Elegirnos?</h3>
@@ -89,6 +334,9 @@
                 <p class="text-center">&copy; 2024 BurrosoBienesRaices. Todos los derechos reservados.</p>
             </div>
         </footer>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </body>
 </html>
     

@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="descripcion" content="parrafo que define la web">
     <meta name="keywords" content="Inmobiliaria,propiedad,alquiler,venta,galpon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="icon" href="./img/imgLogos/icon.jpeg">
-    <title>BurrosoBienesRaices</title> <!---QUE SEA CREATIVO-->
+    <title>BurrosoBienesRaices</title>
     <link rel="stylesheet" href="./style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,47 +17,102 @@
 </head>
 <body>
     <header class="navbar">
-            <img src="./img/imgLogos/imagenG.jpeg" alt="Logo">
-            <div>
-                <p>||Teléfono: 123456789 ||Celular: 987654321 ||Redes: FacebookTwitter@Instagram.com ||</p>
+        <div class="navbar">
+            <div class="logo">
+                <img src="./img/imgLogos/imagenG.jpeg" alt="Logo">
             </div>
-                <input type="checkbox" id="nav-toggle" class="nav-toggle">
-                    <label for="nav-toggle" class="nav-toggle-label"></label>
-
-                <nav class="navHamburguesa">
-                    <ul>
-                        <li><a href="./index.html">Inicio</a></li>
-                        <li><a href="./pages/tasaciones.html">Tasacion Online</a></li>
-                        <li><a href="./pages/contacto.html">Contacto</a></li>
-                        <li><a href="./pages/sobreNosotros.html">SobreNosotros</a></li>
-                    </ul>
-                </nav>  
+            <div class="links">
+                <a href="index.html">Inicio</a>
+                <a href="./pages/tasaciones.html">Tasaciones</a>
+                <a href="./pages/contacto.html">Contacto</a>
+                <a href="./pages/sobreNosotros.html">Nosotros</a>
+                <a href="./pages/busquedaDePropiedades.html">Propiedades</a>
+            </div>
+        </div>
+        <div class="contact-info">
+            <a href="https://www.google.com/intl/es-419/gmail/about/">|| info@tudominio.com</a>
+            <a href="https://www.facebook.com" class="social-icon"><img src="./img/imgLogos/iconFace.png" alt="Instagram"></a>
+            <a href="https://www.instagram.com" class="social-icon"><img src="./img/imgLogos/iconInsta.jpeg" alt="Facebook"></a>
+            <a href="https://www.argenprop.com/?utm_campaign=AR_GS_Argentina_Generica_Brand-General_W_EX_1664708119&utm_medium=cpc&utm_source=Adwords&gad_source=1&gclid=Cj0KCQjw6PGxBhCVARIsAIumnWYpHpxHh9-NOHZ1ewwT8UU-3xLBbYzeMBesoepkzPgKAkfcLtjbrUsaArFlEALw_wcB"
+            class="social-icon"><img src="./img/imgLogos/iconArgen.jpeg" alt="ArgenProp"></a>
+        </div>
     </header> 
     <main class="inicio">
-        <div class="map-container">
-            <iframe
-            src="https://www.google.com/maps/d/u/0/embed?mid=1zCQGqLbf1zjuv-Q8ZUZO5KhSSbbQVJ0&ehbc=2E312F&noprof=1">
-            </iframe>
-            <p>¿Dónde encontrarnos?</p>
-        </div>
+        <h1>¿Queres hacer algo con esa propiedad que no utilizas?</h1>
+        <h2>En Burroso Negocios Industriales te ayudamos a rentarla o venderla rápidamente. ¡Contáctanos y transforma tu propiedad en ingresos hoy mismo!</h2>
         <div class="center-content">
             <div class="image-container">
                 <a href="./pages/busquedaDePropiedades.html">
-                    <img src="./img/mansion_de_noche.jpg" alt="propiedades">
+                    <img src="./img/imgs/mansion_de_noche.jpg" alt="propiedades">
                     <p>Propiedades</p>
                 </a>
             </div>
             <div class="image-container">
                 <a href="./pages/emprendimientos.html">
-                    <img src="./img/edificio_de_noche.jpg" alt="Emprendimientos">
+                    <img src="./img/imgs/edificio_de_noche.jpg" alt="Emprendimientos">
                     <p>Emprendimientos</p>
                 </a>
             </div>
         </div>
-    </main>
+        <div class="map-container">
+            <h2>¿Dónde encontrarnos?</h2>
+            <p>Encontranos en Balcarce 1234</p>
+            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1zCQGqLbf1zjuv-Q8ZUZO5KhSSbbQVJ0&ehbc=2E312F&noprof=1"></iframe>
+                <div class="text-quienesSomos">
+                <p>¿Quienes Somos?</p>
+                <p> Somos una reconocida inmobiliaria con 40 años de experiencia especializada en el rubro de galpones. Nuestro compromiso es ofrecer soluciones integrales y asesoramiento experto para satisfacer las necesidades de nuestros clientes. Con un equipo de profesionales altamente capacitados, nos dedicamos a brindar un servicio de calidad y confianza en cada transacción. Tu éxito es nuestro objetivo principal.</p>
+                <p> ¡Bienvenido a nuestra experiencia en el mercado inmobiliario de galpones!</p>
+                </div>
+        </div>
+        <div class="container mt-5">
+            <h2 class="text-center mb-4">Algunos de nuestros clientes</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Juan Pérez</h5>
+                            <p class="card-text">¡Excelente servicio! Vendí mi propiedad en menos de un mes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">María González</h5>
+                            <p class="card-text">Profesionales y atentos en todo momento. Muy recomendados.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Carlos López</h5>
+                            <p class="card-text">Una experiencia maravillosa, vendí mi propiedad muy rápido.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Ana Martínez</h5>
+                            <p class="card-text">Gran servicio y muy profesionales, los recomiendo al 100%.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Luis Ramírez</h5>
+                            <p class="card-text">El mejor servicio inmobiliario que he utilizado, muy satisfecho.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
     <footer class="main-footer">
         <div class="footer-banner">
-            <img src="./img/banner.jpeg" alt="Banner">
+            <img src="./img/imgLogos/banner.jpeg" alt="Banner">
         </div>
         <div class="footer-text">
             <h3>¿Porque Elegirnos?</h3>
@@ -70,6 +126,8 @@
                 <p class="text-center">&copy; 2024 BurrosoBienesRaices. Todos los derechos reservados.</p>
         </div>
     </footer>
-
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

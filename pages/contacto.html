@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="../img/icon.jpeg">
+        <link rel="icon" href="../img/imgLogos/icon.jpeg">
         <title>BurrosoBienesRaices</title>
         <link rel="stylesheet" href="../style/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,23 +13,26 @@
     </head>
     <body>
         <header class="navbar">
-            <img src="../img/imagenG.jpeg" alt="Logo">
-            <div>
-                <h1></h1> <!--No se que poner pero Casi seguro le ponga el Nombre de la empresa-->
-                <p>||Teléfono: 123456789 ||Celular: 987654321 ||Redes: FacebookTwitter@Instagram.com ||</p>
+            <div class="navbar">
+                <div class="logo">
+                    <img src="../img/imgLogos/imagenG.jpeg" alt="Logo">
+                </div>
+                <div class="links">
+                    <a href="../index.html">Inicio</a>
+                    <a href="../pages/tasaciones.html">Tasaciones</a>
+                    <a href="../pages/contacto.html">Contacto</a>
+                    <a href="../pages/sobreNosotros.html">Nosotros</a>
+                    <a href="../pages/busquedaDePropiedades.html">Propiedades</a>
+                </div>
             </div>
-                <input type="checkbox" id="nav-toggle" class="nav-toggle">
-                    <label for="nav-toggle" class="nav-toggle-label"></label>
-
-                <nav class="navHamburguesa">
-                    <ul>
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="../pages/tasaciones.html">Tasacion Online</a></li>
-                        <li><a href="../pages/contacto.html">Contacto</a></li>
-                        <li><a href="../pages/sobreNosotros.html">SobreNosotros</a></li>
-                    </ul>
-                </nav>  
-        </header>
+            <div class="contact-info">
+                <a href="https://www.google.com/intl/es-419/gmail/about/">|| info@tudominio.com</a>
+                <a href="https://www.facebook.com" class="social-icon"><img src="../img/imgLogos/iconFace.png" alt="Instagram"></a>
+                <a href="https://www.instagram.com" class="social-icon"><img src="../img/imgLogos/iconInsta.jpeg" alt="Facebook"></a>
+                <a href="https://www.argenprop.com/?utm_campaign=AR_GS_Argentina_Generica_Brand-General_W_EX_1664708119&utm_medium=cpc&utm_source=Adwords&gad_source=1&gclid=Cj0KCQjw6PGxBhCVARIsAIumnWYpHpxHh9-NOHZ1ewwT8UU-3xLBbYzeMBesoepkzPgKAkfcLtjbrUsaArFlEALw_wcB"
+                class="social-icon"><img src="../img/imgLogos/iconArgen.jpeg" alt="ArgenProp"></a>
+            </div>
+        </header> 
         <main class="contacto">
             <div class="formulario-contacto">
                 <h2>Contacto</h2>
@@ -54,13 +57,13 @@
                         <label for="mensaje">Mensaje:</label>
                         <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
                     </div>
-                    <button type="submit">Enviar</button>
+                    <input type="submit" value="Enviar" style="background-color: #000000; color: #fff;">
              </form>
          </div>
         </main>
         <footer class="main-footer">
             <div class="footer-banner">
-                <img src="../img/banner.jpeg" alt="banner">
+                <img src="../img/imgLogos/banner.jpeg" alt="banner">
             </div>
             <div class="footer-text">
                 <h3>¿Porque Elegirnos?</h3>

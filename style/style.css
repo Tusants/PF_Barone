@@ -9,6 +9,10 @@ body{
     -ms-overflow-style: none;
     min-height: 100vh;
     min-width: 100vw;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 body::-webkit-scrollbar {
     display: none;
@@ -35,74 +39,55 @@ body::-webkit-scrollbar {
     margin-left: 0px;
 }
 .navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
     background-color: #3b3b3b;
     color: #fff;
-    display: flex;
     align-items: center;
-    justify-content: left;
     padding: 10px;
     font-size:20px;
     
 }
-.nav-toggle {
-    display: none;
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+.logo img {
+    max-width: 300px;
 }
 
-.nav-toggle-label {
-    display: block;
+.links {
+    display: flex;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+}
+.contact-info {
+    display: flex;
+    align-items: center;
+}
+
+.contact-info a {
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.contact-info span {
+    color: white;
+    margin-right: 10px;
+}
+
+.social-icon img {
     width: 30px;
     height: 30px;
-    background-color: #555555;
-    cursor: pointer;
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    z-index: 1000;
-}
-
-.nav-toggle-label:before {
-    content: '';
-    display: block;
-    width: 20px;
-    height: 2px;
-    background-color: #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.navHamburguesa {
-    display: none;
-    background-color: #000000;
-    color: #fff;
-    position: fixed;
-    top: 0px;
-    right: 0;
-    width: 200px;
-    height: 100vh;
-    overflow-y: auto;
-    z-index: 999;
-}
-
-.navHamburguesa ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 40px;
-}
-
-.navHamburguesa ul li {
-    margin-bottom: 30px;
-}
-
-.navHamburguesa ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-#nav-toggle:checked + .nav-toggle-label + .navHamburguesa {
-    display: block;
+    margin-right: 10px;
+    border-radius: 6px;
 }
 @media (max-width: 767px) {
     .navbar img {
@@ -134,23 +119,27 @@ body::-webkit-scrollbar {
 }
 .inicio {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 20px;
+    flex-direction: column;
 }
 .center-content {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex: 2; 
-    flex-direction: column;
+    flex-direction: row;
+    padding: 10px;
+    margin: 10px;
 }
 .image-container {
     text-align: center;
     position: relative;
+    padding: 50px;
 }
 .image-container p {
-    font-size: 18px;
+    font-size: 30px;
     font-weight: bold;
     position: absolute;
     color: #ffffff;
@@ -166,20 +155,37 @@ body::-webkit-scrollbar {
     object-fit: cover;
     width: 500px;
     height: 300px;
-    border-radius: 60%;
+    border-radius: 15px;
     margin-bottom: 10px;
 }
 
 .map-container {
-    flex: 1; 
-    text-align: left;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-items: center;
 }
+
+.map-container p {
+    font-size: 30px
+}
+
 .map-container iframe {
     width: 450px;
     height: 650px;
     border: 2px solid #333;
     border-radius: 10px;
-    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.text-quienesSomos {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    flex-direction: column;
 }
 @media (max-width: 767px) {
     .inicio {
@@ -240,12 +246,17 @@ body::-webkit-scrollbar {
     }
 }
 .main-footer {
+    padding: 20px;
+    margin: 0;
+    width: 100vw;
+    max-height: 100vh;
+    margin-bottom: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #333;
     color: #fff;
-    padding: 20px;
+
 }
 
 .footer-banner img {
@@ -254,13 +265,12 @@ body::-webkit-scrollbar {
     height: auto;
 }
 .footer-text p {
-    margin: 10px 0;
-    font-size: 16px;
+    font-size: 1rem;
     text-align: justify;
 }
 .footer-text h3 {
     margin: 0;
-    font-size: 26px;
+    font-size: 1.2rem;
     text-align: justify;
 
 }
@@ -286,13 +296,13 @@ body::-webkit-scrollbar {
     }
 }
 .pagTasacion{
-    background-image: url(../img/fondo_de_tasaciones.jpg);
+    background-image: url(../img/imgs/fondo_de_tasaciones.jpg);
     background-position: center;
     background-size: cover;
     
 }
 .formTasacion {
-    max-width: 400px;
+    max-width: 600px;
     margin: auto;
     padding: 20px;
     background-color: #fff;
@@ -300,12 +310,12 @@ body::-webkit-scrollbar {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     background-size: cover;
     background-position: center;
-}
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    }
 
-h1 {
-    text-align: center;
-    color: #333;
-}
 
 label {
     display: block;
@@ -398,10 +408,16 @@ input[type="reset"]:hover {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 .contacto{
-    background-image: url(../img/fondo_de_contacto.jpg);
+    background-image: url(../img/imgs/fondo_de_contacto.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+.contacto form {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); 
 }
 @media (max-width: 767px) {
         .formulario-contacto {
@@ -449,44 +465,31 @@ button {
 button:hover {
     background-color: #0056b3;
 }
-.containerProp {
-    max-width: 1200px;
-    margin: 50px auto;
-    padding: 0 20px;
-    font-size: 20px;
+.property-card {
+    width: calc(33% - 20px);
+    margin: 10px;
+    padding: 10px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
 }
-
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: space-around;
-}
-
-.propiedades {
-    width: calc(33.33% - 20px);
-    margin-bottom: 20px;
-    position: relative;
-}
-
-.propiedades img {
+.property-card img {
     width: 100%;
     height: 300px;
-    object-fit: cover;
-    border-radius: 8px;
-    display: block;
+    border-bottom: 5px solid #f2f2f2;
+    margin-bottom: 10px;
 }
-
-.propiedades p {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 5px;
-    border-radius: 5px;
-    font-size: 14px;
+.property-card .details {
+    text-align: center;
 }
-
+.container-properties {
+    text-align: center;
+}
 .container-grid {
     display: grid;
     height: 100vh;

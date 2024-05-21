@@ -111,6 +111,9 @@ body::-webkit-scrollbar {
     .contact-info a {
         margin-right: 5px;
     }
+    .gmail{
+        justify-content: center;
+    }
 }
 
 @media (max-width: 480px) {

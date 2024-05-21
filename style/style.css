@@ -268,6 +268,11 @@ body::-webkit-scrollbar {
     font-size: 1rem;
     text-align: justify;
 }
+.footer-text h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    text-align: justify;}
+
 .footer-text h3 {
     margin: 0;
     font-size: 1.2rem;
@@ -387,17 +392,51 @@ input[type="reset"]:hover {
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
+    height: 300px;
+    overflow: hidden;
 }
 
-.datos-sucursal {
+.sucursal-img, .mapa {
     flex: 1;
-    padding: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.sucursal-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px 0 0 8px;
+}
+.datos-sucursal {
+    flex: 2;
+    padding: 20px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.datos-sucursal p{
+    font-size: 20px;
 }
 
 .mapa {
-    width: 50%;
-    height: 300px;
+    flex: 1;
+    border-radius: 0 8px 8px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+.mapa iframe, .mapa img {
+    width: 100%;
+    height: 100%;
+    border: 0;
 }
 .formulario-contacto {
     max-width: 600px;
@@ -426,11 +465,6 @@ input[type="reset"]:hover {
             border-radius: 0;
         }
     }
-
-h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
 
 .input-group {
     margin-bottom: 15px;
@@ -465,7 +499,7 @@ button {
 button:hover {
     background-color: #0056b3;
 }
-.property-card {
+.card-propiedades {
     width: calc(33% - 20px);
     margin: 10px;
     padding: 10px;
@@ -477,24 +511,47 @@ button:hover {
     display: inline-block;
     vertical-align: top;
     text-align: center;
+    margin-bottom: 50px;
 }
-.property-card img {
+.card-propiedades img {
     width: 100%;
     height: 300px;
     border-bottom: 5px solid #f2f2f2;
     margin-bottom: 10px;
 }
-.property-card .details {
+.card-propiedades .details {
     text-align: center;
 }
-.container-properties {
+.container-propiedades {
     text-align: center;
+}
+.btn-primary{
+    background-color: #1b0d99;
+
+}
+.btn-secondary{
+    background-color: #bb0c0c;
+
+}
+h1{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+h3 {
+    margin-top: 40px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 .container-grid {
     display: grid;
-    height: 100vh;
-    padding: 0.626rem;
-    margin: 0%;
+    height: 100%;
+    padding: 2%;
+    margin: 0;
     border: 5px solid #000000;
     overflow: hidden;
     object-fit: cover;
@@ -511,22 +568,26 @@ button:hover {
 .aside { grid-area: img-main; }
 .main { grid-area: inf-main; }
 footer { grid-area: main-footer; }
-aside { grid-area: carr__boost; padding: 20px; }
-.img-main img, .inf-main img, .carousel-inner img {
+aside { grid-area: carr__boost; padding: 2%; }
+.inf-main img, .carousel-inner img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    max-width: 100%;
     height: auto;
-    display: flex;
-    margin: 0% auto;
-    padding: auto;
+    margin: 0 auto;
+}
+.infEmprendimiento-main {
+    font-size: 1.6rem;
+    justify-content: center;
 }
 
 .carousel {
-    max-width: 37.5rem;
+    max-width: 46.5rem;
     max-height: 25rem;
     justify-content: center;
     border: 0.313rem solid #000000;
+    margin-bottom: 30px;
 }
 .carr__boost {
     display: flex;

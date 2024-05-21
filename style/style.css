@@ -2,15 +2,15 @@
     margin: 0;
     padding: 0;
 }
-body{
+body {
+    margin: 0;
+    padding: 0;
     font-family: "ropa sans", sans-serif;
     background-color: rgba(255, 252, 252, 0.877);
     scrollbar-width: none;
     -ms-overflow-style: none;
     min-height: 100vh;
     min-width: 100vw;
-    margin: 0;
-    padding: 0;
     overflow-x: hidden;
     overflow-y: auto;
 }
@@ -29,11 +29,9 @@ body::-webkit-scrollbar {
     font-style: italic;
 }  
 .navbar img {
-    margin: 0;
-    padding: 0;
     display: flex; 
     align-items: center;
-    width: 125px; 
+    width: 225px; 
     height: auto;
     margin-right: 100px;
     margin-left: 0px;
@@ -45,8 +43,8 @@ body::-webkit-scrollbar {
     background-color: #3b3b3b;
     color: #fff;
     align-items: center;
-    padding: 10px;
-    font-size:20px;
+    padding: 0px;
+    font-size:24px;
     
 }
 .navbar a {
@@ -55,7 +53,7 @@ body::-webkit-scrollbar {
     margin: 0 15px;
 }
 .logo img {
-    max-width: 300px;
+    max-width: 400px;
 }
 
 .links {
@@ -89,34 +87,103 @@ body::-webkit-scrollbar {
     margin-right: 10px;
     border-radius: 6px;
 }
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    display: none; /* Ocultar la hamburguesa por defecto */
+}
+
+.navHamburguesa {
+    display: none; /* Ocultar los elementos li por defecto */
+    background-color: #000000;
+    color: #fff;
+    position: fixed;
+    top: 0px;
+    right: 0;
+    width: 200px;
+    height: 100vh;
+    overflow-y: auto;
+    z-index: 999;
+}
+
+.navHamburguesa ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navHamburguesa ul li {
+    margin-bottom: 15px;
+}
+
+.navHamburguesa ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    display: block;
+}
 @media (max-width: 767px) {
     .navbar img {
-        width: 100px;
+        width: 125px;
         margin-right: 10px;
     }
 
-    .nav-toggle-label {
-        display: block;
-        position: fixed;
-        top: 10px;
-        right: 10px;
-        width: 30px;
-        height: 30px;
-        background-color: #555555;
-        cursor: pointer;
-        z-index: 1000;
+    .navbar {
+        display: column;
+        padding: 10px;
+        font-size: 18px;
     }
 
-    .navHamburguesa {
-        width: 100%;
-        height: 100%;
-        margin-top: 0;
+    .links a {
+        margin-right: 10px;
     }
 
-    .navHamburguesa ul {
-        margin: 20px;
+    .logo img {
+        max-width: 200px;
+    }
+
+    .contact-info a {
+        margin-right: 5px;
+    }
+
+    .social-icon img {
+        width: 25px;
+        height: 25px;
     }
 }
+@media (max-width: 480px) {
+    .navbar img {
+        width: 100px;
+        margin-right: 5px;
+    }
+
+    .navbar {
+        display: column;
+        padding: 5px;
+        font-size: 16px;
+    }
+
+    .links a {
+        margin-right: 5px;
+    }
+
+    .logo img {
+        max-width: 150px;
+    }
+
+    .contact-info a {
+        margin-right: 3px;
+    }
+
+    .social-icon img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
 .inicio {
     display: flex;
     justify-content: center;
@@ -131,7 +198,7 @@ body::-webkit-scrollbar {
     flex: 2; 
     flex-direction: row;
     padding: 10px;
-    margin: 10px;
+    
 }
 .image-container {
     text-align: center;
@@ -245,59 +312,86 @@ body::-webkit-scrollbar {
         margin-bottom: 0;
     }
 }
+@media (max-width: 480px) {
+    .inicio {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .center-content {
+        margin-bottom: 15px; /* Reducido el espacio entre elementos */
+    }
+
+    .image-container img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px; /* Reducido el radio del borde */
+        margin-bottom: 3px; /* Reducido el espacio entre imágenes */
+        object-fit: cover;
+    }
+
+    .image-container p {
+        font-size: 12px; /* Reducido el tamaño de fuente */
+    }
+
+    .map-container iframe {
+        width: 100%;
+        height: 250px; /* Reducida la altura del mapa */
+        margin-bottom: 8px; /* Reducido el espacio después del mapa */
+    }
+}
 .main-footer {
-    padding: 20px;
-    margin: 0;
-    width: 100vw;
-    max-height: 100vh;
-    margin-bottom: 0;
+    margin-top: 30px;
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #333;
     color: #fff;
-
 }
 
 .footer-banner img {
     width: 100%;
-    max-width: 80%;
+    max-width: 90%;
     height: auto;
 }
+
 .footer-text p {
-    font-size: 1rem;
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 1.4rem;
+    text-align: justify;
+    margin: 0;
+}
+
+.footer-text h2,
+.footer-text h3,
+.footer-text h4{
+    margin-top: 20px;
+    font-size: 1.5rem;
     text-align: justify;
 }
-.footer-text h2 {
-    margin: 0;
-    font-size: 1.2rem;
-    text-align: justify;}
 
-.footer-text h3 {
-    margin: 0;
-    font-size: 1.2rem;
-    text-align: justify;
-
-}
 @media (max-width: 767px) {
     .main-footer {
         flex-direction: column;
-        align-items: flex-start;
-        padding: 10px;
+        text-align: center;
+        padding: 20px;
     }
 
     .footer-banner img {
         max-width: 100%;
-    }
-
-    .footer-text {
-        flex-basis: 100%;
+        height: auto;
     }
 
     .footer-text p,
-    .footer-text h3 {
-        font-size: 14px;
-        text-align: left;
+    .footer-text h2,
+    .footer-text h3,
+    .footer-text h4 {
+        text-align: center;
+        margin: 10px 0;
+        font-size: 1.2rem;
     }
 }
 .pagTasacion{

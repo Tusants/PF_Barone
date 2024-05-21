@@ -89,6 +89,7 @@ body::-webkit-scrollbar {
 
     .navbar {
         display: column;
+        width: 100%;
         padding: 10px;
         font-size: 18px;
     }
@@ -116,6 +117,7 @@ body::-webkit-scrollbar {
     }
 
     .navbar {
+        width: 100%;
         display: column;
         padding: 5px;
         font-size: 16px;

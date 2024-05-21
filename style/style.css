@@ -87,44 +87,7 @@ body::-webkit-scrollbar {
     margin-right: 10px;
     border-radius: 6px;
 }
-.nav-toggle {
-    display: none;
-}
 
-.nav-toggle-label {
-    display: none; /* Ocultar la hamburguesa por defecto */
-}
-
-.navHamburguesa {
-    display: none; /* Ocultar los elementos li por defecto */
-    background-color: #000000;
-    color: #fff;
-    position: fixed;
-    top: 0px;
-    right: 0;
-    width: 200px;
-    height: 100vh;
-    overflow-y: auto;
-    z-index: 999;
-}
-
-.navHamburguesa ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.navHamburguesa ul li {
-    margin-bottom: 15px;
-}
-
-.navHamburguesa ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 10px;
-    display: block;
-}
 @media (max-width: 767px) {
     .navbar img {
         width: 125px;
@@ -176,11 +139,6 @@ body::-webkit-scrollbar {
 
     .contact-info a {
         margin-right: 3px;
-    }
-
-    .social-icon img {
-        width: 20px;
-        height: 20px;
     }
 }
 

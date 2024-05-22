@@ -252,7 +252,7 @@ body::-webkit-scrollbar {
         font-size: 20px;
     }
 }
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
         .inicio {
             padding: 15px;
         }
@@ -352,7 +352,7 @@ body::-webkit-scrollbar {
         height: 25px;
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .main-footer {
         flex-direction: column;
         padding: 20px;

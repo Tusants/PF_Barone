@@ -35,7 +35,7 @@ body::-webkit-scrollbar {
     background-color: #3b3b3b;
     color: #fff;
     align-items: center;
-    padding: 30px;
+    padding: 10px;
     font-size:24px;
     
 }
@@ -281,7 +281,6 @@ body::-webkit-scrollbar {
         }
     }
 .main-footer {
-    margin-top: 30px;
     width: 100%;
     height: 100%;
     display: flex;
@@ -307,7 +306,7 @@ body::-webkit-scrollbar {
     padding: 20px;
     font-size: 1.4rem;
     text-align: justify;
-    margin: 0;
+    margin-right: 50px;
 }
 
 .footer-text h2,
@@ -322,11 +321,48 @@ body::-webkit-scrollbar {
         height: 25px;
 }
 
+@media (max-width: 480px) {
+    .main-footer {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .footer-text h3{
+        margin-top: 30px;
+    }
+    .text-center{
+        margin-bottom: 30px;
+        
+    }
+
+    .footer-banner img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .footer-text p,
+    .footer-text h2,
+    .footer-text h3,
+    .footer-text h4 {
+        text-align: center;
+        margin: 10px 0;
+        font-size: 1.2rem;
+    }
+    .social-icon img {
+        width: 25px;
+        height: 25px;
+    }
+}
 @media (max-width: 768px) {
     .main-footer {
         flex-direction: column;
-        text-align: center;
         padding: 20px;
+    }
+    .footer-text h3{
+        margin-top: 30px;
+    }
+    .text-center{
+        margin-bottom: 30px;
+        
     }
 
     .footer-banner img {
@@ -568,7 +604,7 @@ input[type="reset"]:hover {
 
 .formulario-contacto {
     max-width: 600px;
-    margin:auto;
+    margin: auto;
     padding: 20px;
     background-color: #fff;
     border-radius: 8px;
@@ -652,6 +688,18 @@ button:hover {
 }
 .container-propiedades {
     text-align: center;
+}
+.modal-title {
+    text-align: center;
+    width: 100%;
+}
+.close {
+    width: 2rem;
+    height: 2rem;
+}
+
+.close:hover {
+    background-color: transparent;
 }
 .btn-primary{
     background-color: #1b0d99;

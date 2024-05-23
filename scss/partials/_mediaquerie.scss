@@ -64,7 +64,6 @@
 }
 @media (max-width: $Wxs) {
     .inicio {
-        display: flex;
         padding: 10px;
     }
 
@@ -103,8 +102,6 @@
 
 @media (max-width: $Wxl) {
     .inicio {
-        display: flex;
-        flex-direction: column;
         padding: 15px;
     }
 
@@ -214,16 +211,13 @@
 }
 @media (max-width: $Wxl) {
     .card-propiedades {
-        display: flex;
-        flex-direction: column;
+
         width: calc(50% - 20px);
     }
 }
 
 @media (max-width: $Wxs) {
     .card-propiedades {
-        display: flex;
-        flex-direction: column;
         width: calc(100% - 20px);
     }
 }

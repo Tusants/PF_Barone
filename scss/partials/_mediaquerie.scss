@@ -63,6 +63,7 @@
 }
 @media (max-width: $Wxs) {
     .inicio {
+        display: flex;
         padding: 10px;
     }
 
@@ -101,6 +102,8 @@
 
 @media (max-width: $Wxl) {
     .inicio {
+        display: flex;
+        flex-direction: column;
         padding: 15px;
     }
 
@@ -210,17 +213,22 @@
 }
 @media (max-width: $Wxl) {
     .card-propiedades {
+        display: flex;
+        flex-direction: column;
         width: calc(50% - 20px);
     }
 }
 
 @media (max-width: $Wxs) {
     .card-propiedades {
+        display: flex;
+        flex-direction: column;
         width: calc(100% - 20px);
     }
 }
 @media (max-width: $Wxl) {
     .container-grid {
+        display: flex;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-template-areas:
@@ -236,6 +244,7 @@
 @media (max-width: $Wxs) {
     .container-grid {
         padding: 1%;
+        display: flex;
     }
     .carousel {
         max-width: 100%;

@@ -3,60 +3,43 @@
 
 @media (max-width: $Wxl) {
     .navbar {
-        display: flex;
         flex-direction: column;
-        padding: 10px;
-        font-size: 18px;
-
-        img {
-            width: 125px;
-            margin-right: 10px;
-        }
-    }
-
-    .links a {
-        margin-right: 10px;
-    }
-
-    .logo img {
-        max-width: 200px;
-    }
-
-    .contact-info a {
-        margin-right: 5px;
-    }
-
-    .gmail {
-        display: flex;
+        align-items: center;
         justify-content: center;
-        width: 100%;
+    }
+
+    .logo, .links, .gmail {
+        text-align: center;
+        font-size: 20px;
+        
+        
+    }
+    .logo{
+        width: 200px;
+        margin-bottom: 10px;
+    }
+    .links{
+        margin-left: 15px;
+    }
+    .gmail{
+        margin-top: 10px;
     }
 }
 
-@media (max-width: Wxl) {
+@media (max-width: $Wxs) {
     .navbar {
-        display: flex;
         flex-direction: column;
-        padding: 20px;
-        font-size: 24px;
-
-        img {
-            width: 100px;
-            margin-right: 5px;
-        }
+        align-items: center;
+        justify-content: center;
     }
 
-    .links a {
-        margin-right: 5px;
+    .logo, .links, .gmail {
+        text-align: center;
+        font-size: 20px;
+        
+        
     }
 
-    .logo img {
-        max-width: 150px;
-    }
-
-    .contact-info a {
-        margin-right: 3px;
-    }
 }
 @media (max-width: $Wxs) {
     .inicio {

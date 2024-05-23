@@ -13,7 +13,7 @@ body {
   -ms-overflow-style: none;
   min-height: 100vh;
   min-width: 100vw;
-  overflow-x: hidden;
+  overflow-x: auto;
   overflow-y: auto;
 }
 body::-webkit-scrollbar {
@@ -45,6 +45,8 @@ body h3 {
 }
 
 .navbar {
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: space-between;
   background-color: #333;
@@ -57,19 +59,10 @@ body h3 {
   display: flex;
   align-items: center;
   width: 225px;
-  height: auto;
-  margin-right: 100px;
-  margin-left: 0px;
 }
 .navbar a {
   color: #ffffff;
   text-decoration: none;
-  margin: 15px;
-}
-
-.logo img {
-  max-width: 400px;
-  flex-direction: column;
 }
 
 .links {
@@ -483,7 +476,6 @@ aside {
 .main-footer .social-icon img {
   width: 25px;
   height: 25px;
-  margin-right: 10px;
   border-radius: 6px;
 }
 .main-footer .footer-banner img {
@@ -509,61 +501,39 @@ aside {
 
 @media (max-width: 767px) {
   .navbar {
-    display: flex;
     flex-direction: column;
-    width: 100%;
-    padding: 10px;
-    font-size: 18px;
     align-items: center;
+    justify-content: center;
   }
-  .navbar img {
-    width: 125px;
-    margin-right: 10px;
+  .logo, .links, .gmail {
+    text-align: center;
+    font-size: 20px;
   }
-  .links a {
-    margin-right: 10px;
+  .logo {
+    width: 200px;
+    margin-bottom: 10px;
   }
-  .logo img {
-    max-width: 200px;
-  }
-  .contact-info a {
-    margin-right: 5px;
+  .links {
+    margin-left: 15px;
   }
   .gmail {
-    display: flex;
-    justify-content: center;
-    width: 100%;
+    margin-top: 10px;
   }
 }
-@media (max-width: Wxl) {
+@media (max-width: 480px) {
   .navbar {
-    width: 100%;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    padding: 20px;
-    font-size: 16px;
+    justify-content: center;
   }
-  .navbar img {
-    width: 100px;
-    margin-right: 5px;
-  }
-  .links a {
-    margin-right: 5px;
-  }
-  .logo img {
-    max-width: 150px;
-  }
-  .contact-info a {
-    margin-right: 3px;
+  .logo, .links, .gmail {
+    text-align: center;
+    font-size: 20px;
   }
 }
 @media (max-width: 480px) {
   .inicio {
     padding: 10px;
-    justify-content: center;
-    align-items: center;
   }
   .center-content {
     flex-direction: column;

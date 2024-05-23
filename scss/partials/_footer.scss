@@ -1,0 +1,43 @@
+@import 'variables';
+@import 'mixins';
+
+.main-footer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $color-gris;
+    color: $color-blanco;
+
+    .social-icon img {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    border-radius: 6px;
+    }
+
+    .footer-banner img {
+    width: 100%;
+    max-width: 90%;
+    height: auto;
+    }
+}
+
+.footer-text {
+    p {
+        margin-top: 20px;
+        padding: 20px;
+        font-size: 1.4rem;
+        text-align: justify;
+        margin-right: 50px;
+    }
+
+    h2,
+    h3,
+    h4 {
+        margin-top: 20px;
+        font-size: 1.5rem;
+        text-align: justify;
+    }
+}

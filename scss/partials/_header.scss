@@ -1,0 +1,64 @@
+@import 'variables';
+@import 'mixins';
+
+$color-blanco: #ffffff;
+$color-negro: #000000;
+$color-gris: #333;
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: $color-gris;
+    color: $color-blanco;
+    align-items: center;
+    padding: 20px;
+    font-size: 24px;
+
+    img {
+        display: flex;
+        align-items: center;
+        width: 225px;
+        height: auto;
+        margin-right: 100px;
+        margin-left: 0px;
+    }
+
+    a {
+        color: $color-blanco;
+        text-decoration: none;
+        margin: 15px;
+    }
+}
+
+.logo {
+    img {
+        max-width: 400px;
+        flex-direction: column;
+    }
+}
+
+.links {
+    display: flex;
+
+    a {
+        color: $color-blanco;
+        text-decoration: none;
+        margin-right: 15px;
+    }
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+
+    a {
+        color: $color-blanco;
+        text-decoration: none;
+        margin-right: 10px;
+    }
+
+    span {
+        color: $color-blanco;
+        margin-right: 10px;
+    }
+}

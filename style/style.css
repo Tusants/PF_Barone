@@ -560,6 +560,7 @@ aside {
 }
 @media (max-width: 480px) {
   .inicio {
+    display: flex;
     padding: 10px;
   }
   .center-content {
@@ -591,6 +592,8 @@ aside {
 }
 @media (max-width: 767px) {
   .inicio {
+    display: flex;
+    flex-direction: column;
     padding: 15px;
   }
   .center-content {
@@ -684,16 +687,19 @@ aside {
 }
 @media (max-width: 767px) {
   .card-propiedades {
+    display: flex;
     width: calc(50% - 20px);
   }
 }
 @media (max-width: 480px) {
   .card-propiedades {
+    display: flex;
     width: calc(100% - 20px);
   }
 }
 @media (max-width: 767px) {
   .container-grid {
+    display: flex;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas: "main" "aside" "main-footer";
@@ -705,6 +711,7 @@ aside {
 @media (max-width: 480px) {
   .container-grid {
     padding: 1%;
+    display: flex;
   }
   .carousel {
     max-width: 100%;

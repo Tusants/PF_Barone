@@ -659,9 +659,7 @@ button:hover {
 @media (max-width: 767px) {
   .container-grid {
     display: flex;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: "main" "aside" "main-footer";
+    flex-direction: column;
   }
   .container-grid .aside, .container-grid .main {
     padding: 2%;
@@ -670,7 +668,6 @@ button:hover {
 @media (max-width: 480px) {
   .container-grid {
     padding: 1%;
-    display: flex;
   }
   .carousel {
     max-width: 100%;

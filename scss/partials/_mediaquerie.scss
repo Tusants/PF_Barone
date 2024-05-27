@@ -203,12 +203,8 @@
 @media (max-width: $Wxl) {
     .container-grid {
         display: flex;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        grid-template-areas:
-            "main"
-            "aside"
-            "main-footer";
+        flex-direction: column;
+        
         .aside, .main {
             padding: 2%;
         }
@@ -218,7 +214,6 @@
 @media (max-width: $Wxs) {
     .container-grid {
         padding: 1%;
-        display: flex;
     }
     .carousel {
         max-width: 100%;
